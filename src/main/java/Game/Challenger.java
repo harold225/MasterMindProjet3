@@ -8,12 +8,6 @@ public class Challenger {
     public void combinaison ()  {
 
 
-        /**
-         * Génération de combinaison secrete par l'ordinateur
-         *
-         *
-         */
-
         Random rand = new Random();
         int max = 9999;
         int min = 1000;
@@ -21,10 +15,7 @@ public class Challenger {
         System.out.println("Combinaison" + nombreAleatoire);
         System.out.println("Proposer votre combinaison");
 
-        /**
-         *
-         *
-         */
+
 
         Scanner sc = new Scanner(System.in);
         int comb = sc.nextInt();
