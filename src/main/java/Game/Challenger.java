@@ -22,7 +22,7 @@ public class Challenger {
 
         String nombre = String.valueOf(nombreAleatoire);
         String combin = String.valueOf(comb);
-        String status = "";
+        StringBuilder status = new StringBuilder();
 
 
         for (int j = 0; j < 4; j++) {
@@ -36,15 +36,15 @@ public class Challenger {
             int b = Character.getNumericValue(combin.charAt(j));
 
             if (a < b) {
-                status = status + "+";
+                status.append("+");
             }
 
             if (a > b) {
-                status = status + "-";
+                status.append("-");
             }
 
             if (a == b) {
-                status = status + "=";
+                status.append("=");
             }
 
 
